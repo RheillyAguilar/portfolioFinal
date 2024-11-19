@@ -2,7 +2,7 @@
 
 import HTML from '../assets/html-logo.png';
 import CSS from '../assets/css.png';
-import Javascript from '../assets/javascrip.png';
+import Javascript from '../assets/javascript.png';
 import React from '../assets/react-logo.png';
 import Tailwind from '../assets/tailwind-logo.png';
 import MaterialUi from '../assets/materialui-logo.png';
