@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from '../../assets/ellie-logo.png'
 import Resume from '../../assets/RheillyAguilar.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,10 +10,29 @@ export default function Navigation() {
 
     
 const [isOpen, setIsOpen] = useState(false);
+const [sticky, setSticky] = useState(false);
+
+
+// MAKE NAVIGATION STICKY
+const stickyNavigation = () => {
+    if(window.scrollY >= 10) {
+        setSticky(true);
+    } else {
+        setSticky(false);
+    }
+}
+
+// TO KNOW IF THE SCREEN IS SCROLL
+useEffect(() => { 
+    window.addEventListener('scroll', stickyNavigation)
+    return () => window.removeEventListener('scroll', stickyNavigation) 
+}, [])
 
 
   return (
-    <nav className='flex justify-around items-center gap-10 p-5'>
+    <nav className={
+        sticky ? 'sticky nav' : 'flex justify-around items-center gap-10 p-5'
+    }>
 
         <div>
             <img src={Logo} alt="" className='w-[50%]'/>
