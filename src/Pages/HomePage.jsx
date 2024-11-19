@@ -1,5 +1,5 @@
 
-import Navigation from "../Components/Navigation/navigation";
+import Navigation from "../Components/Navigation/Navigation";
 import Home from "../Components/Home/Home";
 
 
