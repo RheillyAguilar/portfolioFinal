@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Raleway";
+    background-color: #e7e5d9;
+}
+
+
+
+/* NAVIGATION */
+.bars {
+    display: none;
+    font-size: 30px;
+    line-height: 28px;
+    cursor: pointer;
+    
+}
+
+
+
+@media only screen and (max-width: 950px) and (min-width: 280px) { 
+
+    .bars {
+        display: block;
+    }
+
+    .nav-link {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: -100%;
+        background: #c3c1ab;
+
+    }
+
+    .nav-link.active {
+        display: block;
+        top: 12%;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background: #c3c1ab;
+    }
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1303px) {
+    .imageOne {
+        width: 42rem;
+    }
+}
