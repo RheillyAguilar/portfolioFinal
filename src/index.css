@@ -33,8 +33,6 @@ body {
         width: 100%;
         left: 0;
         top: -100%;
-        background: #c3c1ab;
-
     }
 
     .nav-link.active {
@@ -60,5 +58,11 @@ body {
 @media only screen and (max-width: 1303px) {
     .imageOne {
         width: 42rem;
+    }
+}
+
+@media only screen and (max-width: 1303px) and (min-width: 280px) { 
+    .about {
+        margin-top: 30rem;
     }
 }
