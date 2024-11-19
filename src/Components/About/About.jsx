@@ -2,8 +2,8 @@ import imageTwo from '../../assets/image-one.jpg';
 
 export default function About() {
     return (
-        <section className="text-[#5e5946] min-h-[100vh] p-5 flex flex-col items-center justify-center gap-16 about">
-            <div className="text-center font-bold">
+        <section className="text-[#5e5946] min-h-[100vh] p-5 about">
+            <div className="text-center font-bold mb-[64px]">
                 <p className="text-md">Get to know more</p>
                 <h1 className="text-4xl">About Me!</h1>
             </div>
