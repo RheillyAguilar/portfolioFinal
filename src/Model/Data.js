@@ -15,6 +15,7 @@ import Github from '../assets/github-logo.png';
 import Vercel from '../assets/vercel-logo.png';
 import VsCode from '../assets/vscode-logo.png';
 import Figma from '../assets/figma-logo.png';
+import Mobi from '../assets/mobi-preview.png'
 
 const Data = {
     language: [
@@ -96,7 +97,40 @@ const Data = {
             image: Figma,
             name: 'Figma'
         }
-    ]
+    ],
+
+    project: [
+        {
+            id: 16,
+            image: Mobi,
+            name: 'Mobi',
+            skills: [
+                {
+                    image: VsCode,
+                    name: 'VsCode'
+                },
+                {
+                    image: React,
+                    name: 'Reactjs'
+                },
+                {
+                    image: Tailwind,
+                    name: 'Tailwind'
+                },
+                {
+                    image: CSS,
+                    name: 'Css'
+                },
+                {
+                    image: Github,
+                    name: 'Github'
+                }
+            ],
+            description: 'Developed and maintained the Mobi website using React.js, focusing n a responsive and efficient user interface. Implemented engaging features to display trending movies and TV shows, using Tailwind and CSS for a polished, visually appealing layout with attention to typography and color schemes. Integrated a video player for seamless trailer playback and created a search functionality to allow users to easily find specific titles.',
+            Visit: 'https://mobi-gules.vercel.app/',
+            Github: 'https://github.com/RheillyAguilar/mobi'
+        }
+    ],
 }
 
 
