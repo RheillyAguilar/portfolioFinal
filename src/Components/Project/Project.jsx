@@ -1,13 +1,19 @@
+
+
 import { Link } from "react-router-dom";
 
 export default function Project({ project }) {
+    
+
     const background = [
         '#0088D2', // VsCode
         '#006899', // React
         '#2c487f', // CSS3
         '#246881', // Tailwind
         '#2D2E32', // Github
+
     ];
+
 
     return (
         <section className="min-h-[90vh] bg-[#e7e5d9] p-5">
@@ -29,41 +35,28 @@ export default function Project({ project }) {
                                 <h1 className="text-2xl font-semibold">{proj.name}</h1>
 
                                 {/* TOOLS I USED */}
-                                <div className="flex flex-wrap items-center justify-center gap-4 mt-3">
+                                <div className="flex flex-wrap items-center justify-center gap-4 mt-3 ">
                                     {proj.skills.map((skill, index) => (
-                                        <div
-                                            key={index}
-                                            className="flex items-center justify-center gap-1 rounded-md w-[100px] h-[30px] p-3"
-                                            style={{ background: background[index % background.length] }}
-                                        >
-                                            <img
-                                                src={skill.image}
-                                                alt={skill.name}
-                                                className="w-5 h-5"
+                                        <div key={index} className="flex items-center justify-center gap-1 rounded-md w-[100px] h-[30px] p-3"
+                                        style={{background: background[index % background.length]}}>
+                                            <img src={skill.image} alt={skill.name} 
+                                            className="w-5 h-5" 
                                             />
-                                            <h1>{skill.name}</h1>
+                                            <h1 className="">{skill.name}</h1>
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             <p className="text-base leading-relaxed">{proj.description}</p>
                             <div className="flex items-center justify-center gap-4 mt-5">
-                                <Link
-                                    to={proj.Visit}
-                                    className="px-12 py-1.5 bg-[#ae887b] rounded-md"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Visit
-                                </Link>
-                                <Link
-                                    to={proj.Github}
-                                    className="px-12 py-1.5 bg-[#ae887b] rounded-md"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Github
-                                </Link>
+                                <Link 
+                                to= {proj.Visit}
+                                className="px-12 py-1.5 bg-[#ae887b] rounded-md"
+                                target="_blank">Visit</Link>
+                                <Link 
+                                to={proj.Github}
+                                target="_blank"
+                                className="px-12 py-1.5 bg-[#ae887b] rounded-md">Github</Link>
                             </div>
                         </div>
                     </div>
