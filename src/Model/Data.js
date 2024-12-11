@@ -10,7 +10,11 @@ import Java from '../assets/java-logo.png';
 import NodeJs from '../assets/node-logo.png';
 import Mysql from '../assets/mysql-logo.png';
 import Dart from '../assets/dart-logo.png';
-
+import Git from '../assets/git-logo.png';
+import Github from '../assets/github-logo.png';
+import Vercel from '../assets/vercel-logo.png';
+import VsCode from '../assets/vscode-logo.png';
+import Figma from '../assets/figma-logo.png';
 
 const Data = {
     language: [
@@ -63,6 +67,34 @@ const Data = {
             id: 10,
             image: Dart,
             name: 'Dart'
+        }
+    ],
+
+    other: [
+        {
+            id: 11,
+            image: Git,
+            name: 'Git'
+        },
+        {
+            id: 12,
+            image: Github,
+            name: 'Github'
+        },
+        {
+            id: 13,
+            image: Vercel,
+            name: 'Vercel'
+        },
+        {
+            id: 14,
+            image: VsCode,
+            name: 'VsCode'
+        },
+        {
+            id: 15,
+            image: Figma,
+            name: 'Figma'
         }
     ]
 }

@@ -2,10 +2,10 @@ import Skills from "../Components/Skills/Skills";
 
 
 export default function
-    ({language}) {
+    ({language, other}) {
     return (
         <div>
-            <Skills language={language}/>
+            <Skills language={language} other={other}/>
         </div>
     )
 }

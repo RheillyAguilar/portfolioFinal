@@ -11,18 +11,15 @@ import Data from '../src/Model/Data';
 export default function App() {
 
 
-  const {language} = Data
+  const {language, other} = Data
  
-
-
-
 
   return (
     <>
       <Navigation />
       <HomePage />
       <AboutPage />
-      <SkillsPage language={language}/>
+      <SkillsPage language={language} other={other}/>
     </>
   )
 }
