@@ -9,6 +9,10 @@ body {
     background-color: #e7e5d9;
 }
 
+* {
+    scroll-behavior: smooth;
+
+}
 
 
 /* NAVIGATION */

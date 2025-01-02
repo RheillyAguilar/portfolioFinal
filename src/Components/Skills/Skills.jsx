@@ -17,14 +17,14 @@ export default function Skills({ language, other }) {
 
     return (
         <>
-            <section className="min-h-[100vh] bg-[#e7e5d9] p-5">
+            <section className="min-h-[100vh] bg-[#e7e5d9] p-5 flex flex-col items-center justify-center" id="skill">
                 {/* Section Header */}
                 <div className="text-center font-bold mb-[64px] text-[#5e5946]">
                     <p className="text-md">Get to know more about my</p>
                     <h1 className="text-4xl">Skills!</h1>
                 </div>
 
-                <div className="flex items-center gap-10 justify-center">
+                <div className="flex flex-wrap items-center gap-10 justify-center">
                     {/* Skills Container */}
                     <div className="flex items-center justify-center">
                         <div className="bg-[#5e5946] w-[600px] h-[450px] p-8 rounded-xl shadow-lg">

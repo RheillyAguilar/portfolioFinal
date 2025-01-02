@@ -1,8 +1,8 @@
-import imageTwo from '../../assets/image-one.jpg';
+import imageTwo from '../../assets/image-two.jpg';
 
 export default function About() {
     return (
-        <section className="text-[#5e5946] min-h-[100vh] p-5 about">
+        <section className="text-[#5e5946] min-h-[100vh] p-5 flex flex-col items-center justify-center" id='about'>
             <div className="text-center font-bold mb-[64px]">
                 <p className="text-md">Get to know more</p>
                 <h1 className="text-4xl">About Me!</h1>
@@ -16,7 +16,7 @@ export default function About() {
                         <div className="text-start space-y-2">
                             <h1>Bachelor of Science in Computer Science</h1>
                             <h1>AMA Computer College - Pasig Branch</h1>
-                            <h1>2021 - Present</h1>
+                            <h1>2021 - December 2024</h1>
                         </div>
                     </div>
 
@@ -25,7 +25,7 @@ export default function About() {
                         <div className="text-start space-y-2">
                             <h1>Shoppable Business B2B</h1>
                             <h1>Poblacion Makati Manila</h1>
-                            <h1>September 2024 - Present</h1>
+                            <h1>September 24, 2024 - January 06, 2025</h1>
                         </div>
                     </div>
                 </div>

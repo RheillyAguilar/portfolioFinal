@@ -16,6 +16,7 @@ import Vercel from '../assets/vercel-logo.png';
 import VsCode from '../assets/vscode-logo.png';
 import Figma from '../assets/figma-logo.png';
 import Mobi from '../assets/mobi-preview.png'
+import Recweb from '../assets/recweb-preview.png'
 
 const Data = {
     language: [
@@ -126,10 +127,45 @@ const Data = {
                     name: 'Github'
                 }
             ],
-            description: 'Developed and maintained the Mobi website using React.js, focusing n a responsive and efficient user interface. Implemented engaging features to display trending movies and TV shows, using Tailwind and CSS for a polished, visually appealing layout with attention to typography and color schemes. Integrated a video player for seamless trailer playback and created a search functionality to allow users to easily find specific titles.',
+            description: 'Develop and maintain the Mobi website using React.js to deliver a responsive and efficient user interface, featuring visually appealing layouts with Tailwind and CSS styling, showcasing trending movies and TV shows, integrating a video player for trailers with smooth playback, and implementing a search functionality for finding specific titles.',
             Visit: 'https://mobi-gules.vercel.app/',
             Github: 'https://github.com/RheillyAguilar/mobi'
-        }
+        },
+        {
+            id: 17,
+            image: Recweb,
+            name: 'Recweb',
+            skills: [
+                {
+                    image: VsCode,
+                    name: 'VsCode'
+                },
+                {
+                    image: HTML,
+                    name: 'HTML'
+                },
+                {
+                    image: Tailwind,
+                    name: 'Tailwind'
+                },
+                {
+                    image: CSS,
+                    name: 'Css'
+                },
+                {
+                    image: Github,
+                    name: 'Github'
+                },
+                {
+                    image: Javascript,
+                    name: 'Javascript'
+                }
+            ],
+            description: 'Develop and maintain the frontend of Recweb using HTML, CSS, and JavaScript, ensuring a responsive layout for an optimal viewing experience across desktop, tablet, and mobile devices, and applying CSS styling to create an aesthetically pleasing interface with meticulous attention to typography, color schemes, and layout.',
+            Visit: 'https://rheillyaguilar.github.io/Recweb/',
+            Github: 'https://github.com/RheillyAguilar/Recweb'
+        },
+        
     ],
 }
 

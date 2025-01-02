@@ -39,10 +39,10 @@ useEffect(() => {
         </div>
             <div className={isOpen ? 'nav-link active' : 'nav-link'}>
                 <ul className='flex items-center gap-10 text-2xl font-bold text-[#5e5946] cursor-pointer'>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>Project</li>
+                    <a href='/'>Home</a>
+                    <a href='#about'>About Me</a>
+                    <a href='#skill'>Skills</a>
+                    <a href='#project'>Project</a>
                 </ul>
             </div>
 
